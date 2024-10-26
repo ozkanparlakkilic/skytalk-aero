@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skytalk Aero
+
+Skytalk Aero is a comprehensive Next.js application designed for aviation-related services and information.
+It integrates several development tools and configurations for streamlined development, testing, and deployment.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- Pnpm (or npm/yarn)
+- Docker (for containerization)
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ozkanparlakkilic/skytalk-aero.git
+cd skytalk-aero
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+```
 
-## Learn More
+Open `http://localhost:3000` in your browser to view the project.
 
-To learn more about Next.js, take a look at the following resources:
+## Key Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Husky**: This project uses Husky to manage Git hooks, ensuring quality control throughout development.
+  For example, Husky can automate tasks like running lint checks and tests before each commit or push, helping maintain code standards.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Docker**: Docker support allows consistent environment management and deployment. You can build and run the project
+  in a container using the following command:
+  ```bash
+  docker-compose up
+  ```
+  Configure settings in `docker-compose.yml` as needed for your environment.
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Scalable structure using Next.js
+- Customizable and responsive design with Tailwind CSS
+- Docker and Husky integration for streamlined development and deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Deploying with Vercel is recommended. Refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contributing
+
+1. Fork the repository and create a new branch (`git checkout -b feature/AmazingFeature`)
+2. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Push to the branch (`git push origin feature/AmazingFeature`)
+4. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
