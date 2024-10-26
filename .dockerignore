@@ -1,0 +1,34 @@
+# Node.js ve bağımlılıklarla ilgili dosyalar
+node_modules
+npm-debug.log
+pnpm-debug.log
+yarn-error.log
+
+# Git ile ilgili dosyalar
+.git
+.gitignore
+
+# Docker ile ilgili dosyalar
+.dockerignore
+Dockerfile
+
+# Config veya ortama özel dosyalar
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+.vscode
+.idea
+
+.DS_Store
+Thumbs.db
+
+.next
+out
+dist
+build
+
+*.log
+.tmp
